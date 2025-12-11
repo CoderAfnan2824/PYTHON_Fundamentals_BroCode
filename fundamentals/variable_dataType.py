@@ -12,6 +12,6 @@ print(type(name))   # prints string
 
 
 # type casting: converting from one data type to other datatype
-
 age = float(age)    # comverted from int to float datatype
 print(type(age))
+
