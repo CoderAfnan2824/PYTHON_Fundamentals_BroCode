@@ -13,3 +13,13 @@ print()
 # Now loop iterates in reverse order from 20 to 1
 for x in reversed(range(1,21,3)):
     print(f"{x} ",end="")
+
+
+row = int(input())
+column = int(input())
+s = (input())
+
+for i in range(row):
+    for j in range(0,column):
+        print(s,end="")
+    print()
