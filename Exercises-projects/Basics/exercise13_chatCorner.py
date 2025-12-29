@@ -18,5 +18,6 @@ for food in cart:
     price += int(menu.get(food))
     print(food,end=" ")
 
+print()
 print("---------")
 print(f"Final Bill: {price}")
