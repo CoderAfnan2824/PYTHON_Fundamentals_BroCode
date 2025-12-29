@@ -33,12 +33,11 @@ for fruit in fruits:
 # 2. Tuple
 
 names = {"afn", "sam", "abhi"}
-
 print(len(names))
 
-names[0] = "krish"
+#Restrictions in tuple
+names[0] = "krish"  # Tuple are immutable, meaning you can't change anything, but add/remove allowed
 
-print(names)
 
 
 
