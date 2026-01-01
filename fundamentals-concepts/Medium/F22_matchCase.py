@@ -33,3 +33,4 @@ def is_weekend(day):
 
 print(is_day(9))
 print(is_weekend(7))
+        
