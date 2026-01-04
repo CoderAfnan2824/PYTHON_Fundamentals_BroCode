@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Afnan Ahmed",
+      "age": 21,
+      "course": "Computer Science",
+      "cgpa": 8.4
+    },
+    {
+      "id": 2,
+      "name": "Rahul Sharma",
+      "age": 22,
+      "course": "Information Technology",
+      "cgpa": 7.9
+    },
+    {
+      "id": 3,
+      "name": "Sneha Reddy",
+      "age": 20,
+      "course": "Electronics",
+      "cgpa": 8.7
+    }
+  ]
+}
