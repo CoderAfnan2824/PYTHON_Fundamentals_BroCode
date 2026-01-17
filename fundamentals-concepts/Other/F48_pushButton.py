@@ -5,7 +5,7 @@ import sys  #It's a system package contains python interpretor variables
 #QMainWindow: It manages window styling
 #
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QLabel,
-                            QWidget, QVBoxLayout, QHBoxLayout, QGridLayout)
+                            QPushButton)
 #Above line imported are used in this program
 
 from PyQt5.QtGui import QIcon, QFont, QPixmap
@@ -25,42 +25,31 @@ class MainWindow(QMainWindow):
 
         #It sets dimension and position of the window
         self.setGeometry(500,250,500, 500)
+
+        #Create button object
+        self.button = QPushButton("Click me!", self)
+        self.label = QLabel("Hello", self)
         self.initUI()
 
     def initUI(self):
-        central_widget = QWidget()
-        self.setCentralWidget(central_widget)
+        #set positioning and styling for button
+        self.button.setGeometry(0,0,250,250)
+        self.button.setStyleSheet("font-size: 30px;")
 
-        label1 = QLabel("1.#")
-        label2 = QLabel("2.#")
-        label3 = QLabel("3.#")
+        #clicked: is an event trigger which send signal when button is clicked
+        #connect: it connects event to the slot (self.onclick)
+        #so when click occurs, we perform onclick operations
+        self.button.clicked.connect(self.onclick)
+    
+    def onclick(self):
+        print("Button clicked!") #print message in console
+        self.button.setText("Clicked")  #change text of button when clicked to "clicked!"
+        self.button.setDisabled(True)   # Disable the button after clicking
+        self.label.setText("GoodBye!")
 
-        label1.setStyleSheet("Background-color: Yellow")
-        label2.setStyleSheet("Background-color: Red")
-        label3.setStyleSheet("Background-color: Green")
+        
 
-        #add at grid level using row and column
-        grid = QGridLayout()
-        grid.addWidget(label1, 0, 0)
-        grid.addWidget(label2, 1, 1)
-        grid.addWidget(label3, 4, 3)
-        central_widget.setLayout(grid)
-
-        '''
-        # Add in rows one after another
-        vbox = QVBoxLayout()
-        vbox.addWidget(label1)
-        vbox.addWidget(label2)
-        vbox.addWidget(label3)
-        central_widget.setLayout(vbox)
-
-        ## Add in columns one after another
-        hbox = QHBoxLayout()
-        hbox.addWidget(label1)
-        hbox.addWidget(label2)
-        hbox.addWidget(label3)
-        central_widget.setLayout(hbox)'''
-#Below boiler create an GUi application, opens a window, keeps it running until user closes it
+    #Below boiler create an GUi application, opens a window, keeps it running until user closes it
 def main():
 
     #below package manages events like mouse clicks, key presses

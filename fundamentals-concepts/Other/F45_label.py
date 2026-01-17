@@ -3,6 +3,7 @@
 import sys  #It's a system package contains python interpretor variables
 #Qapplication: It manages events like mouse click, keypresses
 #QMainWindow: It manages window styling
+#QLabel: helps create units within a widget(eg: block of text, image)
 #
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
 from PyQt5.QtGui import QFont
