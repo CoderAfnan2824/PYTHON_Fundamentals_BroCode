@@ -1,6 +1,6 @@
 import datetime
 
-date = datetime.date(2025, 12, 24)    # Store time in ccyy-mm-dd format
+date = datetime.date(2025, 12, 24)    # Store Date in ccyy-mm-dd format
 
 today = datetime.date.today()         # Current date
 now = datetime.datetime.now()         # Current Time

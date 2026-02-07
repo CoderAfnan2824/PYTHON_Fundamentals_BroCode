@@ -12,7 +12,7 @@ class Student:
     def __init__(self,name,age):
         self.name = name
         self.age = age
-        number_of_students += 1
+        Student.number_of_students += 1
 
 
 student1 = Student("Afnan", 25)

@@ -43,10 +43,10 @@ try:
         json.dump(student, file, indent=5) # This create a josn data with '5' indentation
 
     #Below we create a CSV file 
-    with open(file_path3, 'w') as file:
+    with open(file_path3, 'w', newline="") as file:
         writer = csv.writer(file)
         for row in table:
             writer.writerow(row)
-            
+
 except FileExistsError:
     print("This file already exists")

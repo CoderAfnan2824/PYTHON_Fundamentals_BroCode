@@ -13,7 +13,7 @@ file_path2 = Base / "input.csv"
 try:
     with open(file_path, 'r') as file:
         
-        content = file.readline()
+        content = file.readlines(15)
         print(content)
 
     with open(file_path1, 'r') as file:

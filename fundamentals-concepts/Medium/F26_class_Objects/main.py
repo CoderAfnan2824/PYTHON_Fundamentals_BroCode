@@ -21,4 +21,6 @@ car2 = Car("Benz", 2020, "Olive", True)
 print(car1) # prints address of this object
 print(car1.model)   # prints model of car1
 
-print(car1.drive("kia")) # the value you gave here doesn't copied in car1 instance's model
+print(car1.drive("kia")) 
+# the value you gave here doesn't copied in car1 instance's model
+# because the drive method is defined in class and it doesn't change the model of car1, it just takes the value and print it.

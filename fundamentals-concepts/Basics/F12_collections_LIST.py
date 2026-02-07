@@ -32,7 +32,7 @@ for fruit in fruits:
 
 # 2. Tuple
 
-names = {"afn", "sam", "abhi"}
+names = ("afn", "sam", "abhi")  # Tuple
 print(len(names))
 
 #Restrictions in tuple

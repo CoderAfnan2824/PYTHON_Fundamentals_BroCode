@@ -12,11 +12,11 @@ file1_path = "/Users/coderafnan2824/Documents/test.txt" #absolute path: Independ
 
 if os.path.exists(file_path): # Check if file exists in filepath
     if os.path.isfile(file_path):   # check if given path is a file or not
-        print("It exists")
+        print("Its a file")
     elif os.path.isdir(file_path):
         print("It's a folder")
     else:
-        print("Its not a file")
+        print("Its not a file/folder")
 
 else:
     print("It doesn't exist")

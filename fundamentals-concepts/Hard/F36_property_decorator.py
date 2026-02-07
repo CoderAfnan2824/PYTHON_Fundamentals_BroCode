@@ -17,8 +17,9 @@ class Student:
     def age(self):
         return self._age
     # we retuen self._age instead of self.age. Because if we call self.age, it causes
-    #   and infinite loop
+    #   an infinite loop
     
+    # It's used to set the variable of the object and provide validations when necessary
     @age.setter
     def age(self, new_age):
         if new_age > 0:

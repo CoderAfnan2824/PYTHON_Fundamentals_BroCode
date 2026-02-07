@@ -1,6 +1,7 @@
 
 
-import sys  #It's a system package contains python interpretor variables
+import sys  
+#It's a system package contains python interpretor variables
 #Qapplication: It manages events like mouse click, keypresses
 #QMainWindow: It manages window styling
 #
@@ -24,7 +25,7 @@ class MainWindow(QMainWindow):
         #first we set raw string to avoid escape sequence. The we set image, but mac doesn't show
         image_path = r"image_url"
         self.setWindowIcon(QIcon(image_path))
-        
+
         #so we check if image created 
         icon = QIcon(image_path)
         print(icon.isNull())   # False = icon loaded correctly
@@ -33,7 +34,7 @@ class MainWindow(QMainWindow):
 def main():
 
     #below package manages events like mouse clicks, key presses
-    #argv store command line arguments. Empty string if ntg is passed
+    #argv store command line arguments. return Empty string if ntg is passed
     app = QApplication(sys.argv) 
 
     window = MainWindow()
